@@ -1,5 +1,5 @@
-import React from 'react'
-import PhotoList from '~/components/PhotoList';
+import React from 'react';
+import PhotoList from '../components/PhotoList';
 
 function HomePage() {
   return (

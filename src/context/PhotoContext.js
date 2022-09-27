@@ -20,9 +20,7 @@ const PhotoProvider = ({children}) => {
     },[])
 
   return (
-    <PhotoContext.Provider value={photos}>
-      {children}
-    </PhotoContext.Provider>
+    <PhotoContext.Provider value={photos}> {children} </PhotoContext.Provider>
   )
 }
 

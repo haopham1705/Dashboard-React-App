@@ -1,20 +1,21 @@
 import React, {useContext, useState, useEffect} from 'react'
-import themeContext from '~/context/ThemeContext';
-import photoContext from '~/context/PhotoContext';
+import themeContext from '../../context/ThemeContext';
+import photoContext from '../../context/PhotoContext';
 
 function PhotoList() {
+    // useContext
     const theme = useContext(themeContext)
     const photoCT = useContext(photoContext)
 
-    const lightTheme = theme.theme;
+    const themeValue = theme.theme;
 
   return (
-    <div id="photos-list-container" style={{backgroundColor: `${lightTheme == 'light' ? '#fff' : '#000'}`}}>
+    <div id="photos-list-container" style={{backgroundColor: `${themeValue == 'light' ? '#fff' : '#000'}`}}>
         <ul id="photos-list">
             {
                 photoCT.photos.map((url, id) => {
                     <li>
-                        <h3 style={{color: `${lightTheme ? 'white' : 'black'}`}}>{id}</h3>
+                        <h3 style={{color: `${themeValue == light ? '#000' : '#fff'}`}}>{id}</h3>
                         <img src={url} alt={`photo images ${id}`} />
                     </li>
                 })

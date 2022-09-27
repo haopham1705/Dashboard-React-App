@@ -2,7 +2,10 @@ import React from 'react'
 
 function ProductPage() {
   return (
-    <div>ProductPage</div>
+    <>
+      <h3>ProductPage</h3>
+      <p>List Product Content</p>
+    </>
   )
 }
 
