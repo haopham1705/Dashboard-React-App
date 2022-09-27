@@ -9,6 +9,7 @@ const PhotoProvider = ({children}) => {
         try{
           const resApi = await fetch(url);
           const data = await resApi.json;
+          console.log(data)
           setPhotos(data);
         }catch(err){
           console.log(err);
