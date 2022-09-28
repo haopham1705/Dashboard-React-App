@@ -7,6 +7,7 @@ function PhotoList() {
     const theme = useContext(themeContext)
     const photoCT = useContext(photoContext)
 
+    // get value of theme
     const themeState = theme.theme;
 
   return (
