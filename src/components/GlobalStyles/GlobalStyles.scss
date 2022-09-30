@@ -6,7 +6,7 @@
     --white: #fff;
     --text-color: #161823;
 
-    --font-family: 'ProximaNova', sans-serif;
+    --font-family: 'Montserrat', sans-serif;
 
     // Default layout
     --default-layout-header-height: 60px;
@@ -23,6 +23,7 @@
 html {
     font-size: 62.5%;
 }
+// 62.5% * 6px = 10px
 
 body {
     font-family: var(--font-family);
@@ -62,27 +63,25 @@ a {
 }
 
 // Fonts emmbeded
+    // font Montserrat
 @font-face {
-    font-family: ProximaNova;
-    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-family: Montserrat;
+    src: url('assets/fonts/Montserrat-Light.woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('assets/fonts/Montserrat-Regular.woff');
     font-weight: 400;
 }
-
 @font-face {
-    font-family: ProximaNova;
-    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
-    font-weight: 600;
+    font-family: Montserrat;
+    src: url('assets/fonts/Montserrat-Medium.woff');
+    font-weight: 500;
 }
-
 @font-face {
-    font-family: ProximaNova;
-    src: url('/assets/fonts/Proxima-Nova-Bold.woff');
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: SofiaPro;
-    src: url('/assets/fonts/sofiapro-bold.woff');
+    font-family: Montserrat;
+    src: url('assets/fonts/Montserrat-Bold.woff');
     font-weight: 700;
 }
 

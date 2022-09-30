@@ -1,6 +1,21 @@
 import { createContext, useState } from "react";
 
+
+// const themes = {
+//   light: {
+//     foreground: "#000000",
+//     background: "#eeeeee"
+//   },
+//   dark: {
+//     foreground: "#ffffff",
+//     background: "#222222"
+//   }
+// };
+
+
+
 const ThemeContext = createContext();
+
 function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("light");
 
@@ -9,13 +24,13 @@ function ThemeProvider({ children }) {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  const value = {
+  const valueThemes = {
     theme,
     toggleTheme
   };
-  console.log(`Theme value : ${theme}`)
+  
   return (
-    <ThemeContext.Provider value={value}>{ children }</ThemeContext.Provider>
+    <ThemeContext.Provider value={valueThemes}>{ children }</ThemeContext.Provider>
   );
 }
 

@@ -6,8 +6,8 @@ import config from '~/config';
 // Pages
 import HomePage from './pages/HomePage'
 import ProductPage from './pages/ProductPage';
-import NotFound from './components/NotFound';
 import BlogPage from './pages/BlogPage';
+import NotFound from './components/NotFound';
 
 
 // Public routes
@@ -17,6 +17,7 @@ const publicRoutes = [
     { path: config.routes.blog, component: BlogPage }
 ];
 
+// private routes
 const privateRoutes = [];
 
 export { publicRoutes, privateRoutes };

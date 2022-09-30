@@ -1,6 +1,6 @@
 const routes = {
     home: '/',
-    product: '/product',
+    product: '/products',
     blog: '/blog'
 
 };
